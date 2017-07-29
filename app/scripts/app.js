@@ -23,6 +23,21 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/conversations', {
+        templateUrl: 'views/conversations.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
+      .when('/sign_in', {
+        templateUrl: 'views/sign_in.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
+      .when('/conversations/:id', {
+        templateUrl: 'views/active_chat.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });
