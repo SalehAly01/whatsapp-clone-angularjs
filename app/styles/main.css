@@ -184,14 +184,13 @@ form button{
   }
   body .navbar-collapse .navbar-nav{
     margin-bottom: 0;
-  }
-  body .navbar-collapse .navbar-nav{
     margin-top: 0;
   }
-  body .navbar-collapse{
+  body .container .navbar-collapse{
     background-color: #1EBEA5;
     border: 1px solid #1EBEA5;
     width: 40%;
+    margin-right: 0;
     position:absolute;
     right: 0;
     z-index: 1;
