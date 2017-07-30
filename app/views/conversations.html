@@ -1,45 +1,15 @@
-<section class="chat-list container text-center">
+<section class="chat-list container text-center" ng-controller="ConversationsCtrl as vm">
   <div class="col-md-6 col-md-offset-3">
     <h2>Recent conversations</h2>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav" ng-repeat="conversation in vm.conversations">
       <li>
-        <a class="text-left" href="/conversations/1">
-          <img class="img-circle" src="images/disconnected.png" alt="Whatsapp Logo">
-          <span class="chat-name text-left">Whatsapp</span>
-          <span class="chat-time">8:30 PM </span><br>
-          <span class="last-message">I missed you!</span>
-        </a>
-      </li>
-      <li>
-        <a class="text-left" href="#">
-          <img class="img-circle" src="images/disconnected.png" alt="Whatsapp Logo">
-          <span class="chat-name text-left">Whatsapp</span>
-          <span class="chat-time">8:30 PM </span><br>
-          <span class="last-message">How are you? We didn't talk for a long time</span>
-        </a>
-      </li>
-      <li>
-        <a class="text-left" href="#">
-          <img class="img-circle" src="images/disconnected.png" alt="Whatsapp Logo">
-          <span class="chat-name text-left">Whatsapp</span>
-          <span class="chat-time">8:30 PM </span><br>
-          <span class="last-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
-        </a>
-      </li>
-      <li>
-        <a class="text-left" href="#">
-          <img class="img-circle" src="images/disconnected.png" alt="Whatsapp Logo">
-          <span class="chat-name text-left">Whatsapp</span>
-          <span class="chat-time">8:30 PM </span><br>
-          <span class="last-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
-        </a>
-      </li>
-      <li>
-        <a class="text-left" href="#">
-          <img class="img-circle" src="images/disconnected.png" alt="Whatsapp Logo">
-          <span class="chat-name text-left">Whatsapp</span>
-          <span class="chat-time">8:30 PM </span><br>
-          <span class="last-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </span>
+        <a class="text-left" ng-href="/conversations/{{conversation.id}}">
+          <img class="img-circle chat-avatar" ng-src="{{conversation.avatar}}" alt="Whatsapp Logo">
+          <span class="chat-name text-left">{{conversation.name}}<br>
+            <span class="last-message" ng-if="conversation.LastMessageType === 1">{{conversation.LastMessageText}}</span>
+            <span class="last-message" ng-if="conversation.LastMessageType === 2"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+          </span>
+          <span class="chat-time"><time am-time-ago="conversation.time"></time></span>
         </a>
       </li>
     </ul>
