@@ -10,7 +10,7 @@ angular.module('whatsappCloneApp')
       })
       .when('/conversations', {
         templateUrl: 'views/conversations.html',
-        controller: 'AuthCtrl',
+        controller: 'ConversationsCtrl',
         resolve: {
           auth: ['$auth', function($auth) {
             return $auth.validateUser();

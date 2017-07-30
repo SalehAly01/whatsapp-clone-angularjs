@@ -7,7 +7,8 @@
     "angular-animate": "^1.4.0",
     "angular-cookies": "^1.4.0",
     "angular-route": "^1.4.0",
-    "ng-token-auth": "^0.0.30"
+    "ng-token-auth": "^0.0.30",
+    "angular-moment": "^1.0.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

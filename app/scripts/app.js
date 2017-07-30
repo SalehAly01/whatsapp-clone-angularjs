@@ -13,5 +13,6 @@ angular
     'ngAnimate',
     'ngCookies',
     'ngRoute',
-    'ng-token-auth'
+    'ng-token-auth',
+    'angularMoment'
   ])
