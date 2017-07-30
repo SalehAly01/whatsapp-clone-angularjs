@@ -1,18 +1,16 @@
 'use strict';
 
 angular.module('whatsappCloneApp')
-  .config(function($routeProvider, $locationProvider, $authProvider, ENV_VAR) {
-    $authProvider.configure({
-      apiUrl: ENV_VAR.baseUrl
-    });
+  .config(function($authProvider, $routeProvider, $locationProvider, $logProvider) {
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
+        controller: 'AuthCtrl',
       })
       .when('/conversations', {
         templateUrl: 'views/conversations.html',
-        controller: 'MainCtrl',
+        controller: 'AuthCtrl',
         resolve: {
           auth: ['$auth', function($auth) {
             return $auth.validateUser();
@@ -25,7 +23,7 @@ angular.module('whatsappCloneApp')
       })
       .when('/conversations/:id', {
         templateUrl: 'views/active_chat.html',
-        controller: 'MainCtrl',
+        controller: 'AuthCtrl',
       })
       .otherwise({
         redirectTo: '/'

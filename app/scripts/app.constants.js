@@ -9,6 +9,6 @@
  */
 angular.module('whatsappCloneApp')
   .constant('ENV_VAR', {
-    baseUrl: '#',
+    apiUrl: "https://reqres.in/api/login",
     appName: 'Whatsapp'
   });

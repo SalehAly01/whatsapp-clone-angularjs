@@ -1,16 +1,23 @@
 'use strict';
 
 angular
-  .module('whatsappCloneApp').factory('AuthService', function($rootScope) {
+  .module('whatsappCloneApp').factory('AuthService', function($auth, $location, $log, $rootScope) {
     return {
-      signedIn: false,
-      signIn: function(value) {
-        this.signedIn = value;
-        $rootScope.$broadcast('signedIn');
+      loginUser: function(loginForm) {
+        $auth.submitLogin(loginForm)
+          .then(function() {
+            $location.path('/conversations');
+          }).catch(function(response) {
+            $log.error(response);
+          });
       },
-      getCurrentUser: function(user) {
-        this.currentUser = user;
-        $rootScope.$broadcast('currentUser');
+      logOutUser: function() {
+        $auth.signOut()
+          .then(function() {
+            $location.path('/');
+          }).catch(function(response) {
+            $log.error(response);
+          });
       }
     };
   });

@@ -10,17 +10,25 @@
 angular.module('whatsappCloneApp')
   .controller('AuthCtrl', AuthCtrl);
 
-function AuthCtrl($scope, $auth, $location, $log, AuthService) {
+function AuthCtrl($scope, $auth, $log, AuthService) {
   var vm = this;
+
+  $auth.validateUser().then(
+    function(resp) {
+      if (resp.configName === "default") {
+        $scope.user = resp;
+      } else {
+        $scope.user = null;
+      }
+    },
+  );
+
   vm.loginUser = function() {
-    $auth.submitLogin($scope.loginForm)
-      .then(function(user) {
-        AuthService.signIn(true);
-        AuthService.getCurrentUser(user);
-        $location.path('/conversations');
-      }).catch(function(err) {
-        alert('Wrong');
-        $log.log(err);
-      });
+    AuthService.loginUser($scope.loginForm)
   };
+
+  vm.logOutUser = function() {
+    AuthService.logOutUser()
+  };
+
 }
