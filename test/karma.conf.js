@@ -26,6 +26,8 @@ module.exports = function(config) {
       'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-cookies/angular-cookies.js',
       'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-cookie/angular-cookie.js',
+      'bower_components/ng-token-auth/dist/ng-token-auth.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
