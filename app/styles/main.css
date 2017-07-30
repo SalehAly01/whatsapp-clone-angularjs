@@ -1,109 +1,149 @@
 html body {
   font-family: 'Roboto', sans-serif;
 }
-header nav{
+
+header nav {
   width: 100%;
   background-color: #1EBEA5;
 }
-body .navbar-collapse{
+
+body .navbar-collapse {
   background-color: #1EBEA5;
 }
+
 .navbar-brand img {
   display: inline-block;
 }
+
 .navbar-brand {
   height: 70px;
   margin: 0;
 }
+
 header h1 a:hover, header h1 a:focus {
   text-decoration: none;
   color: #FFF;
 }
+
 header h1 a {
   line-height: 40px;
   color: #FFF;
   margin: 0;
   font-size: 24px;
 }
+
 header .navbar-nav li a {
   line-height: 40px;
   font-size: 18px;
   color: #FFF;
 }
-.navbar-default, header .navbar-nav > li > a:hover,header .navbar-nav > li > a:focus {
+
+.navbar-default, header .navbar-nav li>a:hover, header .navbar-nav li>a:focus {
   background-color: #FFF;
   color: #1EBEA5;
 }
+
 #iconBar {
-  border:1px solid white;
+  border: 1px solid white;
   margin-left: 10px;
   background: #1EBEA5;
   color: #1EBEA5;
 }
-.icon-bar{
+
+.icon-bar {
   background-color: white;
 }
-#iconBar:hover  {
-  border:1px solid #bababa;
+
+#iconBar:hover {
+  border: 1px solid #bababa;
 }
-.active-chat,.chat-list,.sign-in, .main{
+
+.active-chat, .chat-list, .sign-in, .main {
   background-color: #ecf0f1;
-  /*display:block;*/
-  overflow:auto;
+  overflow: auto;
   padding: 40px;
 }
-.main h1{
+
+.main h1 {
   font-size: 28px;
 }
+
 .sign-in button {
   margin-top: 10px;
   color: #FFF;
   background-color: #1EBEA5;
 }
-.active-chat > .col-md-6, .chat-list > .col-md-6{
+
+form p {
+  text-align: center;
+}
+
+form p a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form p a:hover {
+  color: #1EBEA5;
+  text-decoration: none;
+}
+
+form p strong {
+  color: #1EBEA5;
+}
+
+.active-chat>.col-md-6, .chat-list>.col-md-6 {
   background-color: #fff;
   padding: 0;
   border: 1px solid #1EBEA5;
   border-radius: 25px;
   overflow: auto;
 }
-.active-chat h2, .chat-list h2{
+
+.active-chat h2, .chat-list h2 {
   font-size: 24px;
   color: #1EBEA5;
   padding-bottom: 10px;
   margin-bottom: 0;
   border-bottom: 1px solid #1EBEA5;
 }
-.chat-list .chat-name{
+
+.chat-list .chat-name {
   font-size: 16px;
   margin: 10px 0 0 10px;
   float: left;
 }
+
 .chat-list img {
   display: inline-block;
   float: left;
 }
-.chat-list ul{
+
+.chat-list ul {
   display: block;
   width: 100%;
   margin: 5px 0;
 }
+
 .chat-list .navbar-nav li {
   width: 100%;
-  padding: 0 ;
+  padding: 0;
 }
+
 .chat-list .navbar-nav li a {
   display: block;
   font-size: 16px;
   color: #333333;
 }
-.chat-list .chat-time{
+
+.chat-list .chat-time {
   float: right;
   font-size: 12px;
   line-height: 45px;
   color: #95a5a6;
 }
-.chat-list .last-message{
+
+.chat-list .last-message {
   display: inline-block;
   font-size: 12px;
   width: 75%;
@@ -112,53 +152,61 @@ header .navbar-nav li a {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .chat-list a:hover {
   text-decoration: none;
 }
-.chat-list .navbar-nav > li:hover,.chat-list .navbar-nav > li:focus {
+
+.chat-list .navbar-nav>li:hover, .chat-list .navbar-nav>li:focus {
   background-color: #ECF0F1;
 }
-.person-name{
+
+.person-name {
   font-size: 16px;
   text-align: left;
   margin-top: 0;
   margin-bottom: 0;
   color: #1EBEA5;
 }
-.recieved-message{
+
+.recieved-message {
   background-color: #fff;
   margin: 10px 50px 10px 10px;
   padding: 10px 5px 5px 10px;
   border-radius: 15px;
 }
-.sent-message{
+
+.sent-message {
   background-color: #C5EFF7;
   margin: 10px 10px 10px 50px;
   padding: 5px;
   border-radius: 15px;
 }
-.recieved-message p{
+
+.recieved-message p {
   font-size: 12px;
   margin-bottom: 0;
   text-align: left;
 }
-p time{
+
+p time {
   display: block;
   text-align: right;
   margin-right: 10px;
   color: #95a5a6;
-
 }
-.active-chat .chat-box{
+
+.active-chat .chat-box {
   background-color: #DCDCDC;
 }
-.sent-message p{
+
+.sent-message p {
   font-size: 12px;
   margin-bottom: 0;
   text-align: right;
 }
 
-.send-message textarea{
+.send-message textarea {
   width: 75%;
   display: block;
   float: left;
@@ -167,10 +215,12 @@ p time{
   border-radius: 10px;
   padding: 10px;
 }
-.fa-paper-plane,.fa-paperclip{
+
+.fa-paper-plane, .fa-paperclip {
   color: #1EBEA5;
 }
-form button{
+
+form button {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -179,10 +229,10 @@ form button{
   .container {
     max-width: 730px;
   }
-  .navbar-toggle{
+  .navbar-toggle {
     color: #fff;
   }
-  body .navbar-collapse .navbar-nav{
+  body .navbar-collapse .navbar-nav {
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -195,10 +245,10 @@ form button{
     right: 0;
     z-index: 1;
   }
-  .active-chat,.chat-list,.sign-in, .main{
+  .active-chat, .chat-list, .sign-in, .main {
     padding: 70px 40px;
   }
-  .chat-list .last-message{
+  .chat-list .last-message {
     display: inline-block;
     width: 75%;
     margin-left: 65px;
