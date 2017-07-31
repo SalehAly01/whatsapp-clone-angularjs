@@ -7,9 +7,9 @@ version 0.16.0.
 
 Run `grunt` for building and `grunt serve` for preview.
 
-## Than main working branch now is development brach until finishing the app.
+Than main working branch now is development brach until finishing the app.
 
-## Most of the app features are done but some features need an Api like uploading images and sending a message.
+Most of the app features are done but some features need an Api like uploading images and sending a message.
 
 I used local json file to mock the requests from the back end on messages and conversations list.
 
