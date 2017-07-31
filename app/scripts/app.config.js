@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('whatsappCloneApp')
   .config(function($authProvider, $logProvider, $qProvider, ENV_VAR) {
     $logProvider.debugEnabled(true);

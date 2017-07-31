@@ -14,5 +14,6 @@ angular
     'ngCookies',
     'ngRoute',
     'ng-token-auth',
-    'angularMoment'
+    'angularMoment',
+    'ngFileUpload'
   ])

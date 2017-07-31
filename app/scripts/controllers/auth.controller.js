@@ -20,7 +20,7 @@ function AuthCtrl($scope, $auth, $log, AuthService) {
       } else {
         $scope.user = null;
       }
-    },
+    }
   );
 
   vm.loginUser = function() {

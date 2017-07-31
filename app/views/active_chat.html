@@ -1,23 +1,24 @@
-<section class="active-chat container text-center">
+<section class="active-chat container text-center" ng-controller="ChatCtrl as vm">
   <div class="chat-box col-md-6 col-md-offset-3">
-    <h2>Family</h2>
-    <div class="recieved-message">
-      <h3 class="person-name">Mohamed</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <time>8:33 PM</time></p>
+    <h2> <img class="img-circle"ng-src="{{vm.avatar}}" alt="avatar"> {{vm.title}}</h2>
+    <div ng-repeat="message in vm.messages">
+      <div class="recieved-message" ng-if="message.status === 1">
+        <h3 class="person-name">{{message.person}}</h3>
+        <p ng-if="message.type === 1"> {{message.text}} <time am-time-ago="message.time"></time></p>
+        <p ng-if="message.type === 2"><img class="img-thumbnail" ng-src="{{message.image}}" alt=""> <time am-time-ago="message.time"></time></p>
+
+      </div>
+      <div class="sent-message" ng-if="message.status === 2">
+        <h3 class="person-name">{{message.person}}</h3>
+        <p ng-if="message.type === 1">{{message.text}} <time am-time-ago="message.time"></time></p>
+        <p ng-if="message.type === 2"><img class="img-thumbnail" ng-src="{{message.image}}" alt=""> <time am-time-ago="message.time"></time></p>
+      </div>
     </div>
-    <div class="recieved-message">
-      <h3 class="person-name">Mohamed</h3>
-      <p><img class="img-thumbnail"src="images/pic.jpg" alt=""> <time>8:33 PM</time></p>
-    </div>
-    <div class="sent-message">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <time>8:33 PM</time></p>
-    </div>
-    <div class="sent-message">
-      <p><img class="img-thumbnail"src="images/pic.jpg" alt=""> <time>8:33 PM</time></p>
-    </div>
-    <form class="send-message">
-      <textarea placeholder="Type your message"></textarea>
-      <button class="attach"name="attachment" type="button"><i class="fa fa-paperclip" aria-hidden="true"></i></button>
+    <form class="send-message" ng-init="messageSend = {}" ng-submit='sendMessage()'>
+
+      <textarea placeholder="Type you message here!"></textarea>
+      <div class="button" ngf-select="upload($file)"><i class="fa fa-paperclip " aria-hidden="true"></i></div>
+
       <button class="send-message"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
     </form>
   </div>

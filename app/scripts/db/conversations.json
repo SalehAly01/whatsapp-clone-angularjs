@@ -3,45 +3,27 @@
     "name": "The seven kingdoms",
     "avatar": "https://pclive.peacecorps.gov/pclive/media/com_easysocial/photos/720/809/671f4b394c5ae030ee323c839cde88a1_square.jpg",
     "group": true,
-    "LastMessageType": 1,
-    "LastMessageText": "Perferendis cum et commodi facilis molestiae.",
-    "time": "2017-07-30T08:19:18.633Z"
+    "LastMessageType": 2,
+    "LastMessageText": false,
+    "time": "2017-07-31T08:19:18.633Z"
 
   },
   {
     "id": 1,
-    "name": "John Smith",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/stefanozoffoli/128.jpg",
+    "name": "Eldridge Botsford",
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/louis_currie/128.jpg",
     "group": false,
-    "LastMessageType": 2,
-    "LastMessageText": false,
-    "time": "2017-02-01T08:19:18.633Z"
+    "LastMessageType": 1,
+    "LastMessageText": "Adipisci voluptas libero recusandae rerum itaque enim nemo.",
+    "time": "2017-07-31T07:35:21.759Z"
   },
   {
     "id": 2,
     "name": "Family",
     "avatar": "https://68.media.tumblr.com/avatar_a10caf8cf54d_128.png",
     "group": true,
-    "LastMessageType": 1,
-    "LastMessageText": "Adipisci voluptas libero recusandae rerum itaque enim nemo.",
-    "time": "2017-02-01T08:19:18.633Z"
-  },
-  {
-    "id": 3,
-    "name": "Eldridge Botsford",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/louis_currie/128.jpg",
-    "group": false,
     "LastMessageType": 2,
-    "LastMessageText": false,
-    "time": "2017-02-01T08:19:18.633Z"
-  },
-  {
-    "id": 4,
-    "name": "Kayden Erdman",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/artvavs/128.jpg",
-    "group": false,
-    "LastMessageType": 1,
-    "LastMessageText": "Illo sapiente modi reiciendis facilis maxime sunt et ut.",
-    "time": "2017-02-01T08:19:18.633Z"
+    "LastMessageText": "Deal!",
+    "time": "2017-07-31T06:35:21.759Z"
   }
 ]
