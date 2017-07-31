@@ -1,0 +1,60 @@
+[{
+	"id": 0,
+	"title": "Family",
+	"avatar": "https://68.media.tumblr.com/avatar_a10caf8cf54d_128.png",
+	"messages": [{
+			"id": 1,
+			"status": 1,
+			"type": 1,
+			"person": "Dad",
+			"image": false,
+			"text": "How are yo guys?",
+			"time": "2017-07-31T07:30:18.633Z"
+		},
+		{
+			"id": 2,
+			"status": 1,
+			"type": 1,
+			"person": "John",
+			"image": false,
+			"text": "I am fine, missed you all. We should do something together this week!",
+			"time": "2017-07-31T08:03:21.759Z"
+		},
+		{
+			"id": 3,
+			"status": 2,
+			"type": 1,
+			"person": "Me",
+			"image": false,
+			"text": "Let's watch a movie together next Friday!",
+			"time": "2017-07-31T08:10:21.759Z"
+		},
+		{
+			"id": 4,
+			"status": 1,
+			"type": 1,
+			"person": "Harold",
+			"image": false,
+			"text": "Great idea! Let's watch Dunkirk!",
+			"time": "2017-07-31T08:20:21.759Z"
+		},
+		{
+			"id": 5,
+			"status": 1,
+			"type": 2,
+			"person": "Harold",
+			"image": "https://aws.boxofficebuz.com/movies/images/medium_dunkirk_121200.jpg",
+			"text": false,
+			"time": "2017-07-31T08:30:21.759Z"
+		},
+		{
+			"id": 6,
+			"status": 2,
+			"type": 1,
+			"person": "Me",
+			"image": false,
+			"text": "Deal!",
+			"time": "2017-07-31T08:35:21.759Z"
+		}
+	]
+}]

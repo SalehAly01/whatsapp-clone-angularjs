@@ -23,7 +23,7 @@ angular.module('whatsappCloneApp')
       })
       .when('/conversations/:id', {
         templateUrl: 'views/active_chat.html',
-        controller: 'AuthCtrl',
+        controller: 'ChatCtrl',
       })
       .otherwise({
         redirectTo: '/'
