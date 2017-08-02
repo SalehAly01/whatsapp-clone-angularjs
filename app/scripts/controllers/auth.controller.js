@@ -10,7 +10,7 @@
 angular.module('whatsappCloneApp')
   .controller('AuthCtrl', AuthCtrl);
 
-function AuthCtrl($scope, $auth, $log, AuthService) {
+function AuthCtrl($scope, $auth, $log, AuthService, toastr) {
   var vm = this;
 
   $auth.validateUser().then(

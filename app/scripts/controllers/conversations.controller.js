@@ -18,6 +18,6 @@ function ConversationsCtrl($scope, $http, ConversationsService) {
     .then(function(sucess) {
       vm.conversations = sucess.data
     }, function(error) {
-      console.log("Something went wrong");
+      toastr.error('Something went wrong', 'Error');
     });
 }

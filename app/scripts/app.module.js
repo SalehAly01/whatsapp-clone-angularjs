@@ -15,5 +15,6 @@ angular
     'ngRoute',
     'ng-token-auth',
     'angularMoment',
-    'ngFileUpload'
+    'ngFileUpload',
+    'toastr'
   ])

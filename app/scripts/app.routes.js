@@ -3,6 +3,8 @@
 angular.module('whatsappCloneApp')
   .config(function($authProvider, $routeProvider, $locationProvider, $logProvider) {
 
+    $locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('');
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -28,6 +30,4 @@ angular.module('whatsappCloneApp')
       .otherwise({
         redirectTo: '/'
       });
-    $locationProvider.html5Mode(true);
-    $locationProvider.hashPrefix('');
   });

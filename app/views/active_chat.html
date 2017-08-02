@@ -1,6 +1,6 @@
 <section class="active-chat container text-center" ng-controller="ChatCtrl as vm">
   <div class="chat-box col-md-6 col-md-offset-3">
-    <h2> <img class="img-circle"ng-src="{{vm.avatar}}" alt="avatar"> {{vm.title}}</h2>
+    <h2> <img class="img-circle chat-logo" ng-src="{{vm.avatar}}" alt="avatar"> {{vm.title}}</h2>
     <div ng-repeat="message in vm.messages">
       <div class="recieved-message" ng-if="message.status === 1">
         <h3 class="person-name">{{message.person}}</h3>

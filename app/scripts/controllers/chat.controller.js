@@ -10,10 +10,10 @@
 angular.module('whatsappCloneApp')
   .controller('ChatCtrl', ChatCtrl);
 
-function ChatCtrl($scope, $http, $routeParams, ChatService) {
+function ChatCtrl($scope, $http, $routeParams, ChatService, toastr) {
   var vm = this;
-  vm.title = "title";
-  vm.avatar = "avatar";
+  vm.title = "";
+  vm.avatar = "";
   vm.messages = [];
 
   ChatService.getChat($routeParams.id)
@@ -22,14 +22,14 @@ function ChatCtrl($scope, $http, $routeParams, ChatService) {
       vm.avatar = sucess.data[0].avatar;
       vm.messages = sucess.data[0].messages;
     }, function(error) {
-      console.log("Something went wrong");
+      toastr.error('Something went wrong', 'Error');
     });
 
   // ChatService.sendMessage($scope.messageSend)
   //   .then(function(success) {
   //     vm.messages = sucess.data[0].messages;
   //   }, function(error) {
-  //     console.log('Something went Wrong!');
+  //     toastr.error('Something went wrong', 'Error');
   //   });
 
 }
